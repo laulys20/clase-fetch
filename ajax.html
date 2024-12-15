@@ -19,6 +19,8 @@
         //4) gestionar la respuesta
         conexion.addEventListener("load", () => {
             console.log(conexion.responseText); //string con la respuesta del servidor
+            let datos = JSON.parse(conexion.responseText);
+            console.log(datos);
         });
     </script>
 </body>
