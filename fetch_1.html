@@ -12,8 +12,12 @@
 
         fetch("prueba.txt")
         .then(respuesta => {
-            console.log(respuesta);
+            return respuesta.json();
         })
+        .then(personas => {
+            console.log(personas);
+        });
+
     </script>
 </body>
 </html>
